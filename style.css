@@ -87,6 +87,14 @@ display: none;
     padding-top: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    border: solid black 2px;
+}
+.categories p:hover{
+    transition: 2s;
+    background-color: transparent;
+    color: black;
+    
+
 }
 
 .saleimage {
@@ -101,6 +109,19 @@ display: none;
     position: absolute;
     top: 10%;
     left: 5%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+transform: scale(0);
+opacity: 0;
+    }
+    100%{transform: scale(1);
+        opacity: 1;
+
+    }
 }
 
 .saleimage img {
